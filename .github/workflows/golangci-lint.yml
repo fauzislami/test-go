@@ -28,7 +28,7 @@ jobs:
           # Required: the version of golangci-lint is required and must be specified without patch version: we always use the latest patch version.
           version: latest
           # Optional: working directory, useful for monorepos
-          working-directory: hello-world/
+          working-directory: helloworld/
 
           # Optional: golangci-lint command line arguments.
           # args: --issues-exit-code=0
