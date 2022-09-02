@@ -1,10 +1,11 @@
-package 
+package main
 
 import (
+	"fmt"
 	"io"
 	"net/http"
+
 	"github.com/gorilla/mux"
-	"fmt"
 )
 
 func Health(w http.ResponseWriter, r *http.Request) {
@@ -16,5 +17,5 @@ func main() {
 	router := mux.NewRouter()
 
 	router.HandleFunc("/health", Health).Methods("GET")
-	http.ListenAndServe(":8000",router)
+	http.ListenAndServe(":8000", router)
 }
