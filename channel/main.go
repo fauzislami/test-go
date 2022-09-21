@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+
 func CalculateValue(c chan int, i int) {
 	value := rand.Intn(10)
 	fmt.Printf("%d - Calculated Random Value: %d\n", i, value)
